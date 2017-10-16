@@ -1,0 +1,180 @@
+/*
+Team WebPage CSS
+Filenmae: styles.css
+*/
+
+/* reset styles */
+html {
+    font-size: 14px;
+}
+
+article, body, div, footer, header, img, h1, h2, img, p, ul {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+/* body and page container */
+body {
+    background-image: url(img/128-174.jpg);
+    background-repeat:repeat;
+    font-family: Verdana, Geneva, sans-serif;
+}
+.container {
+max-width: 800px;
+    margin: 0 auto;
+    background-color: lightgrey;
+    position: relative;
+}
+
+/* skip navigation link */
+p.skipnavigation a {
+    position: absolute;
+    left: -10000px;
+}
+p.skipnavigation a:focus {
+    left: 0.4em;
+    top: 0.4em;
+    background-color: white;
+    color: #1976D2;
+}
+
+/* headings */
+header {
+    background-color: #1976D2;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.3em;
+    overflow: auto;
+    padding: 0 1%;
+    text-align: left;
+}
+
+header h1 {
+    width: 75%;
+    margin-top: 5%;
+    font-size: 3em;
+    float: right;
+}
+header div {
+    width: 25%;
+    float: left;
+}
+header img {
+    display: block;
+    height: 100px;
+    width: 100px;
+    margin: 10px auto;
+}
+
+/*Site Navigation Bar*/
+nav.sitenavigation {
+    background-color: black;
+    overflow: auto;
+    font-size: 1.4em;
+    text-align: center;
+}
+nav.sitenavigation div {
+    width: 70%;
+    float: right;
+}
+nav.sitenavigation li {
+    margin: .2em .6em;
+    display: inline-block;
+}
+nav.sitenavigation a:link {
+    color: #1976D2;
+    text-decoration: none;
+}
+nav.sitenavigation a:visited{
+    color: lightblue;
+}
+nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+    color: black;
+    background-color: lightgray;
+}
+nav.sitenavigation a:active {
+    position: relative;
+    top: 1px;
+    left: 1px;
+}
+
+/* main content */
+article {
+    position: relative;
+    /*  max-height: 60%; */
+    height: 60%;
+    /* max-width: 59.1%; */
+    width: 60%;
+    float: left;
+    background-color: lightgrey;
+    /* border: 2.5px solid black; */
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+article p {
+    padding: 0.1em 1em;
+}
+
+/* sidebar */
+aside {
+    float: right;
+    /*  max-height: 40%; */
+    color: #FFFFFF;
+    height: 40%;
+    width: 40%;
+    /* padding-top: .5%; */
+    position: relative;
+    background-color: silver;
+    /* border: 2.5px solid black; */
+    padding-bottom: 4.35em;
+}
+aside p {
+    padding: 0.4em 0;
+    margin: 0 0.6em;
+}
+articleb {
+    float: right;
+    width: 40%;
+    height: 60%;
+    /* max-height: 40%; */
+    /*  padding: 1em 0; */
+    position: relative;
+    background-color: grey;
+    /* border: solid black 2.5px; */
+    padding-top: 5em;
+    padding-bottom: .88em;
+}
+articleb p {
+    padding: 0.1em 1em;
+}
+asideb {
+    float: left;
+    /* max-height: 15%; */
+    padding-top: 10%;
+    height: 30%;
+    width: 60%;
+    padding: 3.6em 0;
+    position: relative;
+    background-color: darkgrey;
+    /* border: 2.5px solid black; */
+}
+asideb p {
+    padding: 0.4em 0;
+    margin: 0 0.6em;
+}
+
+/* footer section*/
+footer {
+    text-align: center;
+    padding: 0.6em;
+    max-height: 20%;
+    height: 20%;
+    width: auto;
+    background-color: #1976D2;
+    clear: both;
+}
