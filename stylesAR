@@ -19,6 +19,7 @@ article, body, div, footer, header, h1. h2, p {
   position: relative;
   top: 6.2em;
 }
+
 body {
   background-image:url("128-174.jpg");background-repeat:repeat;
 
