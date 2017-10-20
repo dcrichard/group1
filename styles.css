@@ -1,6 +1,12 @@
 /*
-Team WebPage CSS
-Filenmae: styles.css
+Project Group 1
+Filenmae:   styles.css
+Author(s):  Alfredo Rangel
+            Charles Helm
+            Damien Richard
+            Richard Morse
+            Date: 10/15/2017
+HTML5 and CSS3 Illustrated - Group Project
 */
 
 /* reset styles */
@@ -8,7 +14,7 @@ html {
     font-size: 14px;
 }
 
-article, body, div, footer, header, img, h1, h2, img, p, ul {
+article, body, div, footer, header, h1, h2, h3, img, li, nav, p, ul {
     border: 0;
     padding: 0;
     margin: 0;
@@ -22,14 +28,14 @@ img {
 /* body and page container */
 body {
     background-image: url(img/128-174.jpg);
-    background-repeat:repeat;
-    font-family: Verdana, Geneva, sans-serif;
+    background-repeat: repeat;
+    font-family: 'Proza Libre', sans-serif;
 }
 .container {
-max-width: 800px;
-    margin: 0 auto;
-    background-color: lightgrey;
-    position: relative;
+    max-width: 800px;
+    margin: auto;
+    background-color: darkgrey;
+    position: static;
 }
 
 /* skip navigation link */
@@ -38,64 +44,63 @@ p.skipnavigation a {
     left: -10000px;
 }
 p.skipnavigation a:focus {
-    left: 0.4em;
-    top: 0.4em;
+    left: 85%;
+    top: 10%;
     background-color: white;
     color: #1976D2;
 }
 
 /* headings */
 header {
+    position: relative;
+    top: .8em;
     background-color: #1976D2;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 1.3em;
-    overflow: auto;
-    padding: 0 1%;
     text-align: left;
-}
-
+    height: auto;
+    }
 header h1 {
+    color: white;
     width: 75%;
-    margin-top: 5%;
+    padding: .75em;
+    height:auto;
     font-size: 3em;
+    font-weight: 700;
     float: right;
+    display: inline-block;
 }
-header div {
-    width: 25%;
-    float: left;
-}
-header img {
+header #logo {
+    width: auto;
+    max-height: 100px;
+    max-width: 100px;
     display: block;
-    height: 100px;
-    width: 100px;
-    margin: 10px auto;
+    padding: 1em;
+    margin: 1em;
 }
 
-/*Site Navigation Bar*/
+/* site navigation bar */
 nav.sitenavigation {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
     background-color: black;
-    overflow: auto;
-    font-size: 1.4em;
     text-align: center;
-}
-nav.sitenavigation div {
-    width: 70%;
-    float: right;
-}
+    }
 nav.sitenavigation li {
     margin: .2em .6em;
     display: inline-block;
 }
 nav.sitenavigation a:link {
-    color: #1976D2;
+/*    color: #1976D2;*/
+    color: white;
     text-decoration: none;
 }
 nav.sitenavigation a:visited{
     color: lightblue;
 }
 nav.sitenavigation a:hover, nav.sitenavigation a:focus {
-    color: black;
-    background-color: lightgray;
+    color: ghostwhite;
+    background-color: #1976D2;
 }
 nav.sitenavigation a:active {
     position: relative;
@@ -105,71 +110,35 @@ nav.sitenavigation a:active {
 
 /* main content */
 article {
-    position: relative;
-    /*  max-height: 60%; */
-    height: 60%;
-    /* max-width: 59.1%; */
-    width: 60%;
-    float: left;
     background-color: lightgrey;
-    /* border: 2.5px solid black; */
-    padding-top: 5em;
-    padding-bottom: 5em;
+    padding: .25em .5em;
+    margin: 1em;
+}
+article h2 {
+    padding: .25em 0 0;
+}
+article h3 {
+    display: inline-block;
+    padding: 10px 0 0 0;
 }
 article p {
-    padding: 0.1em 1em;
+    padding: 0 1em 0 1em;
+    text-align: left;
 }
-
-/* sidebar */
-aside {
-    float: right;
-    /*  max-height: 40%; */
-    color: #FFFFFF;
-    height: 40%;
-    width: 40%;
-    /* padding-top: .5%; */
-    position: relative;
-    background-color: silver;
-    /* border: 2.5px solid black; */
-    padding-bottom: 4.35em;
-}
-aside p {
-    padding: 0.4em 0;
-    margin: 0 0.6em;
-}
-articleb {
-    float: right;
-    width: 40%;
-    height: 60%;
-    /* max-height: 40%; */
-    /*  padding: 1em 0; */
-    position: relative;
-    background-color: grey;
-    /* border: solid black 2.5px; */
-    padding-top: 5em;
-    padding-bottom: .88em;
-}
-articleb p {
-    padding: 0.1em 1em;
-}
-asideb {
+img.left {
+    padding: 1em;
+    max-height: 200px;
     float: left;
-    /* max-height: 15%; */
-    padding-top: 10%;
-    height: 30%;
-    width: 60%;
-    padding: 3.6em 0;
-    position: relative;
-    background-color: darkgrey;
-    /* border: 2.5px solid black; */
 }
-asideb p {
-    padding: 0.4em 0;
-    margin: 0 0.6em;
+img.right {
+    padding: 1em;
+    max-height: 200px;
+    float: right;
 }
 
-/* footer section*/
+/* footer section */
 footer {
+    color: white;
     text-align: center;
     padding: 0.6em;
     max-height: 20%;
@@ -178,3 +147,10 @@ footer {
     background-color: #1976D2;
     clear: both;
 }
+
+/*
+@media screen and (max-width: 480px) {
+    header #logo {
+        display: none;
+    }
+}*/
