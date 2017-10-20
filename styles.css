@@ -13,83 +13,82 @@ HTML5 and CSS3 Illustrated - Group Project
 html {
     font-size: 14px;
 }
-
 article, body, div, footer, header, h1, h2, h3, img, li, nav, p, ul {
     border: 0;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 img {
-    max-width: 100%;
     height: auto;
+    max-width: 100%;
     width: auto;
 }
 
 /* body and page container */
 body {
+    font-family: 'Proza Libre', sans-serif;
     background-image: url(img/128-174.jpg);
     background-repeat: repeat;
-    font-family: 'Proza Libre', sans-serif;
 }
 .container {
-    max-width: 800px;
-    margin: auto;
     background-color: darkgrey;
+    margin: auto;
+    max-width: 800px;
     position: static;
 }
 
 /* skip navigation link */
 p.skipnavigation a {
-    position: absolute;
     left: -10000px;
+    position: absolute;
 }
 p.skipnavigation a:focus {
-    left: 85%;
-    top: 10%;
     background-color: white;
     color: #1976D2;
+    left: 85%;
+    top: 10%;
 }
 
 /* headings */
 header {
-    position: relative;
-    top: .8em;
     background-color: #1976D2;
-    text-align: left;
     height: auto;
+    position: relative;
+    text-align: left;
+    top: .8em;
     }
 header h1 {
     color: white;
-    width: 75%;
-    padding: .75em;
-    text-shadow: 3px 3px 2px black;
-    height:auto;
+    display: inline-block;
+    float: right;
     font-size: 3em;
     font-weight: 700;
-    float: right;
-    display: inline-block;
+    height:auto;
+    padding: .75em;
+    text-shadow: 3px 3px 2px black;
+    width: 75%;
 }
 header #logo {
-    width: auto;
+    display: block;
+    margin: 1em;
     max-height: 100px;
     max-width: 100px;
-    display: block;
     padding: 1em;
-    margin: 1em;
+    width: auto;
 }
 
 /* site navigation bar */
 nav.sitenavigation {
-    position: fixed;
+    background-color: black;
     left: 0;
+    position: fixed;
+    text-align: center;
     top: 0;
     width: 100%;
-    background-color: black;
-    text-align: center;
     }
 nav.sitenavigation li {
-    margin: .2em .6em;
     display: inline-block;
+    margin: .2em .6em;
 }
 nav.sitenavigation a:link {
     color: white;
@@ -99,22 +98,22 @@ nav.sitenavigation a:visited{
     color: lightblue;
 }
 nav.sitenavigation a:hover, nav.sitenavigation a:focus {
-    color: ghostwhite;
     background-color: #1976D2;
+    color: ghostwhite;
 }
 nav.sitenavigation a:active {
-    position: relative;
-    top: 1px;
     color: #e2bb27;
     left: 1px;
+    position: relative;
+    top: 1px;
 }
 
 /* main content */
 article {
     background-color: lightgrey;
     box-shadow: 3px 3px 2px black;
-    padding: .25em .5em;
     margin: 1em;
+    padding: .25em .5em;
 }
 article h2 {
     padding: .25em 0 0;
@@ -128,24 +127,24 @@ article p {
     text-align: left;
 }
 img.left {
-    padding: 1em;
-    max-height: 200px;
     float: left;
+    max-height: 200px;
+    padding: 1em;
 }
 img.right {
-    padding: 1em;
-    max-height: 200px;
     float: right;
+    max-height: 200px;
+    padding: 1em;
 }
 
 /* footer section */
 footer {
-    color: white;
-    text-align: center;
-    padding: 0.6em;
-    max-height: 20%;
-    height: 20%;
-    width: auto;
     background-color: #1976D2;
     clear: both;
+    color: white;
+    height: 20%;
+    max-height: 20%;
+    padding: 0.6em;
+    text-align: center;
+    width: auto;
 }
