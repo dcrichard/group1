@@ -62,6 +62,7 @@ header h1 {
     color: white;
     width: 75%;
     padding: .75em;
+    text-shadow: 3px 3px 2px black;
     height:auto;
     font-size: 3em;
     font-weight: 700;
@@ -91,7 +92,6 @@ nav.sitenavigation li {
     display: inline-block;
 }
 nav.sitenavigation a:link {
-/*    color: #1976D2;*/
     color: white;
     text-decoration: none;
 }
@@ -105,12 +105,14 @@ nav.sitenavigation a:hover, nav.sitenavigation a:focus {
 nav.sitenavigation a:active {
     position: relative;
     top: 1px;
+    color: red;
     left: 1px;
 }
 
 /* main content */
 article {
     background-color: lightgrey;
+    box-shadow: 3px 3px 2px black;
     padding: .25em .5em;
     margin: 1em;
 }
