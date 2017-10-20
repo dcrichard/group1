@@ -147,10 +147,3 @@ footer {
     background-color: #1976D2;
     clear: both;
 }
-
-/*
-@media screen and (max-width: 480px) {
-    header #logo {
-        display: none;
-    }
-}*/
