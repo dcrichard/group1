@@ -63,7 +63,7 @@ header h1 {
     float: right;
     font-size: 3em;
     font-weight: 700;
-    height:auto;
+    height: auto;
     padding: .75em;
     text-shadow: 3px 3px 2px black;
     width: 75%;
@@ -79,16 +79,17 @@ header #logo {
 
 /* site navigation bar */
 nav.sitenavigation {
-    background-color: black;
-    left: 0;
+    background-color: #1976D2;
     position: fixed;
     text-align: center;
     top: 0;
-    width: 100%;
+    width: 800px;
     }
 nav.sitenavigation li {
     display: inline-block;
-    margin: .2em .6em;
+    height: 1.5em;
+    margin: .4em 1em;
+    text-shadow: 1px 1px 0 black;
 }
 nav.sitenavigation a:link {
     color: white;
@@ -98,8 +99,8 @@ nav.sitenavigation a:visited{
     color: lightblue;
 }
 nav.sitenavigation a:hover, nav.sitenavigation a:focus {
-    background-color: #1976D2;
-    color: ghostwhite;
+    background-color: #fff;
+    color: #1976D2;
 }
 nav.sitenavigation a:active {
     color: #e2bb27;
