@@ -1,0 +1,151 @@
+/*
+Project Group 1
+Filenmae:   styles.css
+Author(s):  Alfredo Rangel
+            Charles Helm
+            Damien Richard
+            Richard Morse
+            Date: 10/15/2017
+HTML5 and CSS3 Illustrated - Group Project
+*/
+
+/* reset styles */
+html {
+    font-size: 14px;
+}
+article, body, div, footer, header, h1, h2, h3, img, li, nav, p, ul {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+img {
+    height: auto;
+    max-width: 100%;
+    width: auto;
+}
+
+/* body and page container */
+body {
+    font-family: 'Proza Libre', sans-serif;
+    background-image: url(img/128-174.jpg);
+    background-repeat: repeat;
+}
+.container {
+    background-color: darkgrey;
+    margin: auto;
+    max-width: 800px;
+    position: static;
+}
+
+/* skip navigation link */
+p.skipnavigation a {
+    left: -10000px;
+    position: absolute;
+}
+p.skipnavigation a:focus {
+    background-color: white;
+    color: #1976D2;
+    left: 85%;
+    top: 10%;
+}
+
+/* headings */
+header {
+    background-color: #1976D2;
+    height: auto;
+    position: relative;
+    text-align: left;
+    top: .8em;
+    }
+header h1 {
+    color: white;
+    display: inline-block;
+    float: right;
+    font-size: 3em;
+    font-weight: 700;
+    height: auto;
+    padding: .75em;
+    text-shadow: 3px 3px 2px black;
+    width: 75%;
+}
+header #logo {
+    display: block;
+    margin: 1em;
+    max-height: 100px;
+    max-width: 100px;
+    padding: 1em;
+    width: auto;
+}
+
+/* site navigation bar */
+nav.sitenavigation {
+    background-color: #1976D2;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 800px;
+    }
+nav.sitenavigation li {
+    display: inline-block;
+    height: 1.5em;
+    margin: .4em 1em;
+    text-shadow: 1px 1px 0 black;
+}
+nav.sitenavigation a:link {
+    color: white;
+    text-decoration: none;
+}
+nav.sitenavigation a:visited{
+    color: lightblue;
+}
+nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+    background-color: #fff;
+    color: #1976D2;
+}
+nav.sitenavigation a:active {
+    color: #e2bb27;
+    left: 1px;
+    position: relative;
+    top: 1px;
+}
+
+/* main content */
+article {
+    background-color: lightgrey;
+    box-shadow: 3px 3px 2px black;
+    margin: 1em;
+    padding: .25em .5em;
+}
+article h2 {
+    padding: .25em 0 0;
+}
+article h3 {
+    display: inline-block;
+    padding: 10px 0 0 0;
+}
+article p {
+    padding: 0 1em 0 1em;
+    text-align: left;
+}
+img.left {
+    float: left;
+    max-height: 200px;
+    padding: 1em;
+}
+img.right {
+    float: right;
+    max-height: 200px;
+    padding: 1em;
+}
+
+/* footer section */
+footer {
+    background-color: #1976D2;
+    clear: both;
+    color: white;
+    height: 20%;
+    max-height: 20%;
+    padding: 0.6em;
+    text-align: center;
+    width: auto;
+}
