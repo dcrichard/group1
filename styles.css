@@ -56,9 +56,6 @@ header {
     height: auto;
     position: relative;
     padding-top: 1.5%;
-/*    text-align: left;*/
-/*    top: 0;*/
-/*    z-index: 10;*/
     }
 header h1 {
     color: white;
@@ -73,23 +70,10 @@ header h1 {
     width: 70%;
 }
 #logo {
-/*    background-color: #1976D2;*/
-/*    display: inline-block;*/
-/*    float: left;*/
     margin: 0 2.5%;
     padding: 0;
-/*    max-height: 50%;*/
-/*    max-width: 50%;*/
-/*    padding: 1em;*/
     width: 20%;
 }
-/*
-#logo img {
-    max-height: 50%;
-    max-width: 50%;
-    width: auto;
-}
-*/
 
 /* site navigation bar */
 #nav {
@@ -140,15 +124,20 @@ article p {
     padding: 0 1em 0 1em;
     text-align: left;
 }
+article img {
+    box-shadow: 2px 2px 3px black;
+    background-color: silver;
+    margin: 0 1em .5em;
+}
 img.left {
     float: left;
     max-height: 200px;
-    padding: 1em;
+/*    margin: 1em;*/
 }
 img.right {
     float: right;
     max-height: 200px;
-    padding: 1em;
+/*    margin: 1em;*/
 }
 
 /* footer section */
