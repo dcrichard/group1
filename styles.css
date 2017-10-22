@@ -35,6 +35,7 @@ body {
     margin: auto;
     max-width: 800px;
     position: static;
+/*    z-index: -10;*/
 }
 
 /* skip navigation link */
@@ -54,55 +55,67 @@ header {
     background-color: #1976D2;
     height: auto;
     position: relative;
-    text-align: left;
-    top: .8em;
+    padding-top: 1.5%;
+/*    text-align: left;*/
+/*    top: 0;*/
+/*    z-index: 10;*/
     }
 header h1 {
     color: white;
     display: inline-block;
     float: right;
+    padding-top: 5%;
     font-size: 3em;
     font-weight: 700;
     height: auto;
-    padding: .75em;
+    text-align: left;
     text-shadow: 3px 3px 2px black;
-    width: 75%;
+    width: 70%;
 }
-header #logo {
-    display: block;
-    margin: 1em;
-    max-height: 100px;
-    max-width: 100px;
-    padding: 1em;
+#logo {
+/*    background-color: #1976D2;*/
+/*    display: inline-block;*/
+/*    float: left;*/
+    margin: 0 2.5%;
+    padding: 0;
+/*    max-height: 50%;*/
+/*    max-width: 50%;*/
+/*    padding: 1em;*/
+    width: 20%;
+}
+/*
+#logo img {
+    max-height: 50%;
+    max-width: 50%;
     width: auto;
 }
+*/
 
 /* site navigation bar */
-nav.sitenavigation {
+#nav {
+    text-align: right;
     background-color: #1976D2;
-    position: fixed;
-    text-align: center;
-    top: 0;
-    width: 800px;
-    }
-nav.sitenavigation li {
-    display: inline-block;
-    height: 1.5em;
-    margin: .4em 1em;
-    text-shadow: 1px 1px 0 black;
+    padding-bottom: .5em;
+    padding-right: 6%;
 }
-nav.sitenavigation a:link {
+#nav li {
+    list-style: none;
+    display: inline-block;
+    height: 1em;
+    margin: .4em .5em;
+}
+#nav a:link {
     color: white;
     text-decoration: none;
 }
-nav.sitenavigation a:visited{
+#nav a:visited{
     color: lightblue;
 }
-nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+#nav a:hover, nav.sitenavigation a:focus {
     background-color: #fff;
     color: #1976D2;
 }
-nav.sitenavigation a:active {
+#nav a:active {
     color: #e2bb27;
     left: 1px;
     position: relative;
