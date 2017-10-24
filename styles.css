@@ -13,7 +13,7 @@ HTML5 and CSS3 Illustrated - Group Project
 html {
     font-size: 14px;
 }
-article, body, div, footer, header, h1, h2, h3, img, li, nav, p, ul {
+article, body, div, fieldset, footer, form, header, h1, h2, h3, input, img, label, legend, li, nav, p, section, ul {
     border: 0;
     margin: 0;
     padding: 0;
@@ -141,6 +141,63 @@ img.right {
     float: right;
     max-height: 200px;
 /*    margin: 1em;*/
+}
+
+/* fieldset styles */
+fieldset {
+    margin-bottom: .5em;
+}
+legend {
+    font-size: 1.15em;
+}
+.contactinfo legend, .topicselect legend, .distribution legend {
+    margin-left: -.1em;
+}
+
+/* field styles */
+.contactinfo input {
+    border: 1px solid #1976D2;
+    padding: .02em;
+    font-size: 1em;
+}
+.topicselect, .distribution, .contactinfo {
+    margin-top: 1em;
+    padding: 0.8em;
+    border: 1px solid #777;
+}
+.contactinfo input {
+    position: absolute;
+    left: 10em;
+}
+#nameinput, #emailinput, #address1input, #address2input {
+    width: 25em;
+}
+#phoneinput, #zipinput {
+    width: 12em;
+}
+#submit {
+    float: right;
+    border: none;
+    padding: .4em .6em;
+    background-color: #1976D2;
+    font-size: 1.25em;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px black;
+    color: white;
+}
+
+/* label styles */
+label {
+    font-size 1em;
+    line-height: 1.5em;
+}
+.contactinfo label {
+    display: block;
+    position: relative;
+    margin: .5em 0;
+}
+.topicselect label, .distribution label {
+    margin-right: 1.5em;
 }
 
 /* footer section */
