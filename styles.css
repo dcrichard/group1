@@ -55,14 +55,14 @@ header {
     background-color: #1976D2;
     height: auto;
     position: relative;
-    padding-top: 1.5%;
+    padding-top: 2.5%;
     }
 header h1 {
     color: white;
     display: inline-block;
     float: right;
-    padding-top: 5%;
-    font-size: 3em;
+    padding-top: 7%;
+    font-size: 2.5em;
     font-weight: 700;
     height: auto;
     text-align: left;
