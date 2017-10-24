@@ -1,37 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Form Processor</title>
-<meta charset="utf-8" />
-<style type="text/css">
-	body { background-color: #eeeeee; }
-	#wrapper { width: 40em;
-				background-color: white;
-				margin: 0  auto;
-				padding: 10px;
-				border-left: 1px solid gray;
-				border-right: 1px solid gray;}
+    <head>
+        <title>Project Group 1 - Submitted</title>
+        <!--
+            Project Group 1 - Form Processor
+            Filename:   FormProcessor.html
 
-</style>
-</head>
-<body>
-<div id="wrapper">
-		<script type="text/javascript">
-		/* <![CDATA[ */
-		document.write("<h1>Your form has been submitted!</h1><h2>You entered the following data:</h2>");
-		var formData = location.search;
-		formData = formData.substring(1, formData.length);
-		while (formData.indexOf("+") != -1) {
-			formData = formData.replace("+", " ");
-		}
-		formData = unescape(formData);
-		var formArray = formData.split("&");
-		for (var i=0; i < formArray.length; ++i) {
-			document.writeln(formArray[i] + "<br />");
-		}
-		/* ]]> */
-		</script>
-</div>
-</body>
+            Author(s):  Alfredo Rangel
+                        Charles Helm
+                        Damien Richard
+                        Richard Morse
+            Date:       10/15/2017
+            HTML5 and CSS3 Illustrated - Group Project
+        -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <script src="modernizr.custom.62074.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Proza+Libre:400,400i,600,700,700i" rel="stylesheet">
+
+        <!--
+            TODO:   ADD <link rel="shortcut icon" href="img/favicon.ico">
+            TODO:   ADD <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+            TODO:   ADD <link rel="icon" sizes="192.192" href="img/androiod.png">
+        -->
+
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <p class="skipnavigation"><a href="#contentstart">Skip Navigation</a></p>
+                <h1>Project Group 1 - Submitted</h1>
+                <a href="index.html"><img id="logo" src="img/card.png" width="75" height="75" alt="CARD Logo"></a>
+                <ul id="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="charles.html">Charles's Page</a></li>
+                    <li><a href="alfredo.html">Alfredo's Page</a></li>
+                    <li><a href="richard.html">Richard's Page</a></li>
+                    <li><a href="damien.html">Damien's Page</a></li>
+                </ul>
+            </header>
+            <article>
+                <div id="wrapper">
+                    <script type="text/javascript">
+                        /* <![CDATA[ */
+                        document.write("<h1>Your form has been submitted!</h1><h2>You entered the following data:</h2>");
+                        var formData = location.search;
+                        formData = formData.substring(1, formData.length);
+                        while (formData.indexOf("+") != -1) {
+                            formData = formData.replace("+", " ");
+                        }
+                        formData = unescape(formData);
+                        var formArray = formData.split("&");
+                        for (var i=0; i < formArray.length; ++i) {
+                            document.writeln(formArray[i] + "<br />");
+                        }
+                        /* ]]> */
+                    </script>
+                </div>
+            </article>
+
+            <footer>
+                <p>Alfredo Rangel <img src="img/little_men.gif" width="16" height="16" alt="CARD"> Charles Helm <img src="img/little_men.gif" width="16" height="16" alt="CARD"> Damien Richard <img src="img/little_men.gif" width="16" height="16" alt="CARD"> Rick Morse</p>
+            </footer>
+        </div>
+    </body>
 </html>
-
