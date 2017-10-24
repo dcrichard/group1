@@ -124,6 +124,9 @@ article p {
     padding: 0 1em 0 1em;
     text-align: left;
 }
+article p:last-of-type {
+    margin-bottom: 1em;
+}
 article img {
     box-shadow: 2px 2px 3px black;
     background-color: silver;
