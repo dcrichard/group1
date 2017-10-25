@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Project Group 1 - Submitted</title>
+        <title>Submited | Project Group 1</title>
         <!--
             Project Group 1 - Form Processor
             Filename:   FormProcessor.html
@@ -18,51 +18,55 @@
         <script src="modernizr.custom.62074.js"></script>
         <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css?family=Proza+Libre:400,400i,600,700,700i" rel="stylesheet">
-
-        <!--
-            TODO:   ADD <link rel="shortcut icon" href="img/favicon.ico">
-            TODO:   ADD <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-            TODO:   ADD <link rel="icon" sizes="192.192" href="img/androiod.png">
-        -->
-
     </head>
     <body>
+        <p class="skipnavigation"><a href="#contentstart">Skip Navigation</a></p>
+        <header>
+            <h1>
+                <a href="index.html"><img src="img/team-banner.gif" width="659" height="165" alt="Project Group 1 - Team Card"></a>
+            </h1>
+        </header>
+        <nav class="sitenavigation">
+            <div class="navigation-menu-button">
+                <img src="img/menu.png" width="63" height="57" alt="Show navigation">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="charles.html">Charles's Page</a></li>
+                <li><a href="alfredo.html">Alfredo's Page</a></li>
+                <li><a href="richard.html">Richard's Page</a></li>
+                <li><a href="damien.html">Damien's Page</a></li>
+            </ul>
+        </nav>
         <div class="container">
-            <header>
-                <p class="skipnavigation"><a href="#contentstart">Skip Navigation</a></p>
-                <h1>Project Group 1 - Submitted</h1>
-                <a href="index.html"><img id="logo" src="img/card.png" width="75" height="75" alt="CARD Logo"></a>
-                <ul id="nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="charles.html">Charles's Page</a></li>
-                    <li><a href="alfredo.html">Alfredo's Page</a></li>
-                    <li><a href="richard.html">Richard's Page</a></li>
-                    <li><a href="damien.html">Damien's Page</a></li>
-                </ul>
-            </header>
-            <article>
-                <div id="wrapper">
-                    <script type="text/javascript">
-                        /* <![CDATA[ */
-                        document.write("<h1>Your form has been submitted!</h1><h2>You entered the following data:</h2>");
-                        var formData = location.search;
-                        formData = formData.substring(1, formData.length);
-                        while (formData.indexOf("+") != -1) {
-                            formData = formData.replace("+", " ");
-                        }
-                        formData = unescape(formData);
-                        var formArray = formData.split("&");
-                        for (var i=0; i < formArray.length; ++i) {
-                            document.writeln(formArray[i] + "<br />");
-                        }
-                        /* ]]> */
-                    </script>
-                </div>
-            </article>
-
-            <footer>
-                <p>Alfredo Rangel <img src="img/little_men.gif" width="16" height="16" alt="CARD"> Charles Helm <img src="img/little_men.gif" width="16" height="16" alt="CARD"> Damien Richard <img src="img/little_men.gif" width="16" height="16" alt="CARD"> Rick Morse</p>
-            </footer>
+            <div>
+                <article>
+                    <div class="page">
+                        <h1>Form Processed</h1>
+                    </div>
+                    <div id="wrapper">
+                        <script type="text/javascript">
+                            /* <![CDATA[ */
+                            document.write("<h1>Your form has been submitted!</h1><h2>You entered the following data:</h2>");
+                            var formData = location.search;
+                            formData = formData.substring(1, formData.length);
+                            while (formData.indexOf("+") != -1) {
+                                formData = formData.replace("+", " ");
+                            }
+                            formData = unescape(formData);
+                            var formArray = formData.split("&");
+                            for (var i=0; i < formArray.length; ++i) {
+                                document.writeln(formArray[i] + "<br />");
+                            }
+                            /* ]]> */
+                        </script>
+                    </div>
+                </article>
+            </div>
         </div>
+        <footer>
+            <p>Alfredo Rangel <img src="img/little_men.gif" width="16" height="16" alt="CARD"> Charles Helm <img src="img/little_men.gif" width="16" height="16" alt="CARD"> Damien Richard <img src="img/little_men.gif" width="16" height="16" alt="CARD"> Rick Morse</p>
+        </footer>
+        <script src="script.js"></script>
     </body>
 </html>
