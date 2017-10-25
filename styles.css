@@ -182,7 +182,7 @@ legend {
 }
 #nameinput, #emailinput, #address1input, #address2input {
     padding-left: 3px;
-    width: 25em;
+    width: 13em;
 }
 #phoneinput, #zipinput, #stateinput, #cityinput {
     padding-left: 3px;
