@@ -180,13 +180,10 @@ legend {
     margin-top: 1em;
     padding: 0.8em;
 }
-#nameinput, #emailinput, #address1input, #address2input {
+#nameinput, #emailinput, #address1input, #address2input,
+        #phoneinput, #zipinput, #stateinput, #cityinput {
     padding-left: 3px;
     width: 13em;
-}
-#phoneinput, #zipinput, #stateinput, #cityinput {
-    padding-left: 3px;
-    width: 12em;
 }
 #submit {
     background-color: #1976D2;
@@ -201,7 +198,7 @@ legend {
 
 /* label styles */
 label {
-    font-size 1em;
+    font-size: 1em;
     line-height: 1.5em;
 }
 .contactinfo label {
