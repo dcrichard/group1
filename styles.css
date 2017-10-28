@@ -154,6 +154,33 @@ img.right {
     float: right;
     max-height: 200px;
 }
+.page p:first-letter {
+    font-size: 1.5em;
+    float: left;
+    line-height: 0.9em;
+}
+.page
+    a:link {
+        color: #1976D2; 
+        background-color: transparent;
+        text-decoration: none; 
+}    
+    a:visited {
+        color: purple;
+        background-color: transparent;
+        text-decoration: none;
+}
+    a:hover {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+        transition: all 0.5s ease;
+}
+    a:active {
+        color: black;
+        background-color: yellow;
+        text-decoration: none;
+}
 
 /* fieldset styles */
 fieldset {
@@ -165,7 +192,14 @@ legend {
 .contactinfo legend, .topicselect legend, .distribution legend {
     margin-left: -.1em;
 }
+.video {
+    display: block;
+    left: 45%;
+    position: absolute;
+    top: 55%;
 
+
+}
 /* field styles */
 .contactinfo input {
     border: 1px solid #1976D2;
@@ -198,10 +232,24 @@ legend {
     font-size: 1.25em;
     padding: .4em .6em;
 }
-
+ .survey, .one, .like { 
+    border: 2px solid #1976D2;
+    margin-top: 1em;
+    padding: 0.8em;
+}
+.experience input, .area input, .Ide input, .emailReq input {
+    border: 1px solid black;
+    font-size: 1em;
+    left: 30%;
+    padding: .02em;
+    position: absolute;
+}
+.emailReq input {
+    width: auto;
+}
 /* label styles */
 label {
-    font-size 1em;
+    font-size: 1em;
     line-height: 1.5em;
 }
 .contactinfo label {
@@ -211,6 +259,44 @@ label {
 }
 .topicselect label, .distribution label {
     margin-right: 1.5em;
+}
+ .survey, .one, .like { 
+    border: 2px solid #1976D2;
+    margin-top: 1em;
+    padding: 0.8em;
+}
+.experience input, .area input, .Ide input, .emailReq input {
+    border: 1px solid black;
+    font-size: 1em;
+    left: 30%;
+    padding: .02em;
+    position: absolute;
+}
+.emailReq input {
+    width: auto;
+}
+.YesOrNo, .one {
+    font-size: 1em;
+}
+.survey .CodeTitle {
+    font-size: 1.2em;
+    margin-top: 1em;
+    padding: 1px;
+    font-weight: bold;
+    margin-left: -.1em;
+}
+.sub {
+    background-color: #1976D2;
+    border: 2px solid black;
+    box-shadow: 2px 2px 0px 0px black;
+    color: black;
+    float: right;
+    font-size: 1.25em;
+    padding: .2em .2em;
+}
+.survey label {
+    font-size: 1.2em;
+    display: block;
 }
 
 /* footer section */
