@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css?family=Proza+Libre:400,400i,600,700,700i" rel="stylesheet">
         <style>
-            h1 {
+            #resptitle {
                 text-shadow: 0 1px 0 #ccc,
                              0 2px 0 #c9c9c9,
                              0 3px 0 #bbb,
@@ -29,6 +29,35 @@
                              0 5px 10px rgba(0,0,0,.25),
                              0 10px 10px rgba(0,0,0,.2),
                              0 20px 20px rgba(0,0,0,.15);
+            }
+            .damimg {
+                overflow: hidden;
+                padding-top: 2em;
+            }
+            #desktop-img {
+                border: 8px solid #1976D2;
+                border-radius: 5px;
+                bottom: 5px; left: 60px;
+                max-width: 450px;
+                position: absolute;
+                width: 100%;
+            }
+            #tablet-img {
+                border: 4px solid #1976D2;
+                border-radius: 5px;
+                bottom: 5px;
+                left: 20px;
+                max-width: 178px;
+                position: absolute;
+                width: 100%;
+            }
+            #phone-img {
+                border:2px solid #1976D2;
+                border-radius:5px;
+                bottom: 5px;
+                max-width: 82px;
+                position: absolute;
+                width: 100%;
             }
         </style>
     </head>
@@ -55,13 +84,13 @@
             <div>
                 <article>
                     <div class="page">
-                        <h1>Responsive Web Design</h1>
+                        <h1 id="resptitle">Responsive Web Design</h1>
                     </div>
-                    <div style="overflow:hidden; padding-top: 2em;">
+                    <div class="damimg">
                         <div style="width: 450px;height: 360px;position: relative;">
-                            <img src="/img/img_rwd_desktop.jpg" style="position: absolute; bottom: 5px; left: 60px; border: 8px solid #1976D2; border-radius: 5px; width: 100%;max-width: 450px;" alt="desktop example">
-                            <img src="/img/img_rwd_tablet.jpg" style="position: absolute; bottom: 5px; left: 20px; border: 4px solid #1976D2; border-radius: 5px; width: 100%;max-width: 178px;" alt="tablet example">
-                            <img src="/img/img_rwd_phone.jpg" style="position: absolute; bottom: 5px; border:2px solid #1976D2; border-radius:5px; width: 100%; max-width: 82px;" alt="phone example">
+                            <img id="desktop-img" src="img/img_rwd_desktop.jpg" alt="desktop example">
+                            <img id ="tablet-img" src="img/img_rwd_tablet.jpg" alt="tablet example">
+                            <img id="phone-img" src="img/img_rwd_phone.jpg" alt="phone example">
                         </div>
                     </div>
                     <div>
@@ -124,7 +153,7 @@
                         <h2>Want to know more?</h2>
                         <h3>Signup for our Newsletter</h3>
                         <p>Interested in keeping up to date with the most recent information on Responsive Web Design?  Sign up today to begin receiving our free monthly Newsleter and more! Select your preference(s) below and provide your contact details to stay relevent.</p>
-                        <form action="FormProcessor.html" method="get">
+                        <form action="formprocessor.html" method="get">
                             <fieldset class="topicselect">
                                 <legend>Which topic(s) are you interested in?</legend>
                                 <label for="design">
