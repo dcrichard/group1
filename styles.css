@@ -49,10 +49,9 @@ p.skipnavigation a {
 p.skipnavigation a:focus {
     background-color: #1976D2;
     color: #fff;
-    top: 0.4em;
     left: auto;
     right: 0.4em;
-    top: .4em;
+    top: 0.4em;
     z-index: 2;
 }
 
@@ -134,6 +133,9 @@ article h3 {
     display: inline-block;
     padding: 10px 0 0 0;
 }
+article h4 {
+    margin: .5em;
+}
 article p {
     padding: 0 1em 0 1em;
     text-align: left;
@@ -146,11 +148,11 @@ article img {
     box-shadow: 2px 2px 3px black;
     margin: 0 1em .5em;
 }
-img.left {
+.left {
     float: left;
     max-height: 200px;
 }
-img.right {
+.right {
     float: right;
     max-height: 200px;
 }
@@ -180,13 +182,10 @@ legend {
     margin-top: 1em;
     padding: 0.8em;
 }
-#nameinput, #emailinput, #address1input, #address2input {
+#nameinput, #emailinput, #address1input, #address2input,
+        #phoneinput, #zipinput, #stateinput, #cityinput {
     padding-left: 3px;
     width: 13em;
-}
-#phoneinput, #zipinput, #stateinput, #cityinput {
-    padding-left: 3px;
-    width: 12em;
 }
 #submit {
     background-color: #1976D2;
@@ -201,7 +200,7 @@ legend {
 
 /* label styles */
 label {
-    font-size 1em;
+    font-size: 1em;
     line-height: 1.5em;
 }
 .contactinfo label {
@@ -283,8 +282,8 @@ footer img {
 /* print styles */
 @media print {
     body, h1, article, footer {
-        color: rgb(0,0,0);
         background: rgb(255,255,255);
+        color: rgb(0,0,0);
     }
     body {
         max-width: 100%;
