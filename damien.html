@@ -11,7 +11,7 @@
             HTML5 and CSS3 Illustrated - Group Project
         -->
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="modernizr.custom.62074.js"></script>
         <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css?family=Proza+Libre:400,400i,600,700,700i" rel="stylesheet">
@@ -41,23 +41,66 @@
                     <div class="page">
                         <h1>Responsive Web Design</h1>
                     </div>
+                    <div style="overflow:hidden; padding-top: 2em;">
+                        <div style="width: 450px;height: 360px;position: relative;">
+                            <img src="/img/img_rwd_desktop.jpg" style="position: absolute;bottom: 5px;left: 60px;border: 8px solid #1976D2;border-radius: 5px;width: 100%;max-width: 450px;" alt="full page example">
+                            <img src="/img/img_rwd_tablet.jpg" style="position: absolute;bottom: 5px;left: 20px;border: 4px solid #1976D2;border-radius: 5px;width: 100%;max-width: 178px;" alt="full page example">
+                            <img src="/img/img_rwd_phone.jpg" style="position:absolute;bottom:5px;border:2px solid #1976D2;border-radius:5px;width:100%;max-width:82px;">
+                        </div>
+                    </div>
                     <div>
-                        <h2 id="contentstart">Responsive Web Design</h2>
-                        <h3>Minor Section 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus iure amet consequuntur dolor sapiente aut odit nisi molestiae quod eum libero, animi modi, obcaecati quasi fugiat. At blanditiis doloremque ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                        <h3>Minor Section 2</h3>
-                        <p>Eos ipsa sint sapiente est error perspiciatis? Error nostrum, iste perspiciatis corporis recusandae dolore ea distinctio, libero ratione, at similique inventore voluptatibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima in quia veritatis? Autem harum reprehenderit officia sapiente modi illo dolorem consequuntur aperiam ex reiciendis quibusdam, numquam beatae nulla, quia, ipsum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis et obcaecati placeat quod quia ad saepe velit ipsum, cum alias. Neque cupiditate asperiores excepturi voluptate magni, voluptatibus ipsa nesciunt deserunt.</p>
-                        <h3>Minor Section 3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia eligendi, quae est impedit officia unde eius delectus! Repellendus ea in rem sed, similique provident vero, at veritatis repellat labore, minus.</p>
+                        <h2 id="contentstart">What is responsive web design?</h2>
+                        <h3>Not all users are the same</h3>
+                        <p>In a nutshell, responsive web design is about designing a webpage in such a way that it looks good for all users, altering the way it presents itself based the platform, screen size, or orientation in which it is being viewed.</p><br>
+                        <p>A responsive design takes into consideration how to respond to a user's behavior and environment based on the type of device that a viewer may use. A page should look good if you are viewing it from a desktop, tablet, or mobile phone. This is done by determining how the images, text and navigation should appear based on the width of the viewport it is being displayed through.</p><br>
+                        <p>Web developers can not keep up with the endless number of new resolutions and devices that their sites will be viewed on. To create a website version for each resolution and device would be very impractical. Responsive web design addresses this issue by using a combination of flexible grids and layouts, images, and the use of CSS and HTML to resize, hide, shrink, enlarge, or move page content around based on the size of the of the browser.</p><br>
+                        <p>There are many different elements that can be modified so that the platform they are being displayed on and the way the user interacts with them is optimal regardless of platform, but a great experience can be achieved through many different solutions, it all comes down to how the developer would like the page to display in various resolutions, and using the tools and tricks available to him to ensure that the page does have the desired look and feel, regardless of where it is viewed.</p>
                     </div>
                 </article>
                 <article>
                     <div>
-                        <h2>Subject next session</h2>
-                        <h3>Minor Topic 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus iure amet consequuntur dolor sapiente aut odit nisi molestiae quod eum libero, animi modi, obcaecati quasi fugiat. At blanditiis doloremque ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nobis nisi a sapiente quaerat perferendis itaque, esse, deleniti blanditiis alias. Quia doloribus, dolorum incidunt voluptatem, asperiores rem nisi sed perspiciatis.</p>
-                        <h3>Minor Topic 2</h3>
-                        <p>Eos ipsa sint sapiente est error perspiciatis? Error nostrum, iste perspiciatis corporis recusandae dolore ea distinctio, libero ratione, at similique inventore voluptatibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima in quia veritatis? Autem harum reprehenderit officia sapiente modi illo dolorem consequuntur aperiam ex reiciendis quibusdam, numquam beatae nulla, quia, ipsum! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h2>What are the steps to creating a responsive design?</h2>
+                        <h3>Consider these best practices</h3>
+                        <h4>Take advantage of Device Features</h4>
+                        <p>Viewing a page on a mobile device the user has the capability to do unique tasks that they may not be able to perform on a computer such as sending a message, making a call, or opening an app.  You should take advantage of these features and design your page in such a way that when it is viewed on a mobile device their experience is enhanced by leveraging these features.</p><br>
+                        <p>The same goes for when your page is viewed on a large display… use the real-estate to your advantage to showcase your content.</p>
+                        <h4>Don't be afraid to Minimize</h4>
+                        <p>Mobile devices simply do not have the same amount of space to work with as a desktop computer.  Because of this constraint you shuoldn't be afraid to remove some elements from your page when it is viewed on small devices to improve the users experience.</p><br>
+                        <p>You could shrink all of your images and text, making your content condensed enough that everything you are trying to share is available on the page, but the users experience may be negatively impacted because they can't see what they are even reading, but doing so will likely discourage site visitors from reading or returning to your page.</p><br>
+                        <p>When designing your page, consider your pages rendering on a small device as a site of its own.  If content that you display on your desktop page isn't critical to conveying the message, leave it out or provide other ways for it to be obtained via smaller screens.</p>
+                        <h4>Prioritize your content</h4>
+                        <p>At times there will be content that your desktop page contains that you just can not remove from the page when it is viewed on a mobile device.  When faced with the issue that all remaining content is absolutely pertinent to the visitor, you should consider prioritizing your content.  Once prioritized you can display the content the user is most likely looking for at the top of the page, and the less important information towards the end of the page.  You can also hide your lower priority content behind tappable areas so that the user has the ability to see the content if they wish.</p>
+                        <h4>Make your clickable areas consistant across the page</h4>
+                        <p>Because your users may be viewing your page content on mobile devices, they may not have the luxury of interacting with links and buttons using a precision pointing device such as a mouse, they will instead likely be using their fingers, which range in size considerably. To help with this you should consider having consistantly larger areas around interactive elements to improve the elements use.</p>
+                        <h4>Responsive Images</h4>
+                        <p>Not all devices need the same size images.  A desktop may need an image thats 1400 pixels wide for clean look, but when displayed on a mobile device the image maximum available size may be 400 pixels wide.  That means the size of the image that the mobile device is downloading would be 3 and a half times smaller than the desktop image, which is a considerable difference, especially when users may be using cellular data to download the page/image. Going with the largest size fits all approach, websites load much slower and consume more data.  To optimize the display of images across devices you can use multiple versions of the same image that are tailored to the device they will be displayed on. According to <a href="http://httparchive.org/interesting.php#bytesperpage">statistics correlated from a Oct 2017 query on http archive, </a> images still make up 54% of the weight of the web. Keeping this footprint small for mobile devices will go a long way towards increasing visitor satisfaction.</p>
+                        <h4>Responsive Text</h4>
+                        <p>Being able to read the content of your page is obviously a critical element to your pages success, but even more so when your page is being displayed on a mobile device. If a visitor can't read your page, then they won't be there long and likely will not return. You must ensure that your content is is legible regardless of where it is viewed.  To do so you must consider both the font that you are using, as well as the size of the font. When your page is viewed on a smaller device, decrease the size of the font and make sure that there is a good balance between the headings and the body of the content.</p><br>
+                        <p>According to a <a href="https://www.smashingmagazine.com/2014/09/balancing-line-length-font-size-responsive-web-design/">2014 article in Smashing Magazine</a>, when designing a responsive website, if small text on a mobile device requires the viewer to pinch and zoom, the responsive structure isn't really helping the user.  Instead you should start with a comfortable font size, and measure to determine break points.  From there you should adjust the font size in the various break points to evaluate readability and adjust if needed.  A general rule of thumb is around 60-70 characters per line of body copy on a mobile device.</p>
+                        <h4>Use Scalable Vector Graphics</h4>
+                        <p>In addition to using multiple versions of the same image, you can also use Scalable Vector Graphics(SVGs) for things like icons.  SVGs can scale to any size without losing their sharpness, which provides for a more polished look, regardless of the resolution of the site they are being viewed on.</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h2>Key elements used to create a responsive site</h2>
+                        <h3>The viewport</h3>
+                        <p>As a page is rendered, the browser looks for a meta tag called the viewport. This tag provides the browser with instructions on how to control the page dimensions and scaling. To optimize the page for a wide range of devices the meta viewport tag must be added to the head of the html document.  The following meta tag instructs the page to match the screen’s width in device-independent pixels using the <span style="font-weight: bold; background-color: #f5f2f0; border-radius: 5px;"> width=device-width </span> statement, which allows the page to adjust content to match the screen size, while the <span style="font-weight: bold; background-color:#f5f2f0; border-radius: 5px;"> initial-scale=1 </span> statement instructs the browser to establish a 1:1 relationship between CSS pixels and device-independent pixels.</p>
+                        <div style="width: 80%; margin: auto; padding: 1%;">
+                            <img src="img/viewport.png" style="width: 100%;" alt="viewport element decleration">
+                        </div>
+                        <h3>Images</h3>
+                        <p>When creating a website you want the images on that website to scale nicely to fit any browser size.  You can control how an image scales by setting the width property on the image.  When an image width is set to 100% the image will scale both up and down, but if the max-width property is set to 100%, the image will scale down if it has to, but it will not scale up to be larger than its original size. Setting these properties will allow your images to scale to different page sizes, but this alone does not handle all aspects of responsive images.  To create responsive images, most web developers use the following three key attributes: <span style="font-weight: bold; background-color: #f5f2f0; border-radius: 5px;">srcset</span>, <span style="font-weight: bold; background-color: #f5f2f0; border-radius: 5px;">sizes</span>, and <span style="font-weight: bold; background-color: #f5f2f0; border-radius: 5px;">picture</span>.</p><br>
+                        <p>There is a<a href="">Responsive Images Community Group</a> that has many examples of how responsive images can work using the picture element and different media-queries that display how the images will look on different devices including: mobile devices, tablets, desktops, and monochrome/eInk.</p>
+                        <h3>Media Queries</h3>
+                        <p>Media-queries are a key element of css that enable webpage content to change to different screen sizes and resolutions based on the viewport.  They are a fundamental componant of responsive web design, allowing designers to change the appearance of a webpage to match the device the page is being displayed on.</p><br>
+                        <p>The following example of a media-query activates if the users display port is 768 pixes wid or less.  It sets the article font-size to 12 pixels, the max width of all images to 480 pixels and the height of the header to 40 pixels.</p>
+                        <div style="width: 50%; margin: auto; padding: 1%;">
+                            <img src="img/media-query.png" style="width: 100%;" alt="viewport element decleration">
+                        </div>
+                        <p>There are many other <a href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp">great examples on how media-queries can be used</a> to improve a websites responsiveness over at w3schools.com</p>
+                        <h3>Browser Support</h3>
+                        <p>When it comes to responsive images, standards are available in all current browsers with the exception of Opera Mini, but if you set the srcset fall back method of src to an image that has been optimized for small screens then the lack of support shouldn’t be an issue.  There is some confusion surrounding srcset with Safari, where the browser doesn’t new images as the viewport size changes, but this can be considered as a feature of Safari, considering that if you are resizing the image when the browser size changes, why would you want to download another image to replace the image you already downloaded.</p>
                     </div>
                 </article>
                 <article class="signup">
